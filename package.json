@@ -1,0 +1,19 @@
+{
+  "name": "nodjs",
+  "version": "1.0.0",
+  "description": "Crud Simples Nodjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrisEvaristo/CrudSimplesNode.git"
+  },
+  "author": "Cristóvão Evaristo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrisEvaristo/CrudSimplesNode/issues"
+  },
+  "homepage": "https://github.com/CrisEvaristo/CrudSimplesNode#readme"
+}
