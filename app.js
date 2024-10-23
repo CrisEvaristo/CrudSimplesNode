@@ -27,6 +27,10 @@ conexao.connect( function(erro){
 
 const app = express();
 
+//Adicionar Bootstrap
+
+app.use('/bootstrap',express.static('./node_modules/bootstrap/dist'));
+
 //configuração do express-handlebars
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
