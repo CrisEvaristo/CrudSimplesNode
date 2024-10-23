@@ -2,6 +2,10 @@
 
 const express = require('express');
 
+//Importar express-handlebars
+
+const { engine } = require('express-handlebars');
+
 //importar mysql
 const mysql = require('mysql2');
 
@@ -23,11 +27,15 @@ conexao.connect( function(erro){
 
 const app = express();
 
-//Rota ola mundo
+//configuração do express-handlebars
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+app.set('views', './views');
+
+//Rota principal
 
 app.get('/', function(req,res){
-    res.write("Utilizando nodermon");
-    res.end();
+   res.render('formulario');
 });
 
 //servidor
