@@ -2,6 +2,23 @@
 
 const express = require('express');
 
+//importar mysql
+const mysql = require('mysql2');
+
+//configuração
+const conexao = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'projectonode'
+});
+//teste de conexão
+
+conexao.connect( function(erro){
+    if(erro)throw erro;
+    console.log('conexao efectuada');
+});
+
 //app
 
 const app = express();
