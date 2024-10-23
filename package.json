@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/CrisEvaristo/CrudSimplesNode/issues"
   },
-  "homepage": "https://github.com/CrisEvaristo/CrudSimplesNode#readme"
+  "homepage": "https://github.com/CrisEvaristo/CrudSimplesNode#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
 }
